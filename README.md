@@ -21,7 +21,7 @@ unicast_peer {
 }
 ```
 ![image](https://user-images.githubusercontent.com/25949605/234643464-08876654-94fd-4b29-893a-ed58a6e60477.png)
-vrrp_instance test_ip {
+```vrrp_instance test_ip {
 state BACKUP
 interface enp0s3
 virtual_router_id 15
@@ -38,6 +38,6 @@ unicast_peer {
         192.168.0.150 dev enp0s3 label enp0s3:vip
 }
 }
-
+```
 ![image](https://user-images.githubusercontent.com/25949605/234643195-4fe4162b-5c12-4365-88c9-178c6f9177ff.png)
 
